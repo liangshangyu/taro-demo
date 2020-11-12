@@ -1,0 +1,36 @@
+.wrap {
+    width: 300px;
+    padding-top: 12px;
+    padding-bottom: 24px;
+    display: inline-block;
+    border-radius: 20px;
+    margin-right: 20px;
+    overflow: hidden;
+    .image {
+        width: 300px;
+        height: 330px;
+        background-color: yellowgreen;
+    }
+    .detail {
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+        background-color: lightpink;
+        padding-left: 6px;
+    }
+    .pcName {
+        overflow: hidden;
+        display: -webkit-box;
+        text-overflow: ellipsis;
+        word-wrap: break-word;
+        white-space: normal !important;
+        -webkit-line-clamp: 2;	/*  行数*/
+        -webkit-box-orient: vertical;
+    }
+    .price {
+        display: flex;
+        flex-direction: row;
+        margin-top: 12px;
+        margin-bottom: 12px;
+    }
+}
